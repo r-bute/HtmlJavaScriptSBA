@@ -3,62 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Management System</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-  </head>
+    <title>City Hospital - Home</title>
+    <!-- Web Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Internal CSS (Requirement) -->
+    <style>
+      /* Internal CSS Example */
+      p {
+        font-size: 16px;
+      }
+    </style>
+</head>
   <body>
-  
     <!-- Header and Navigation -->
     <header id="header">
-      <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="register.html">Register</a>
-        <a href="login.html">Login</a>
-        <a href="about.html">About Us</a>
-      </nav>
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo.png" alt="City Hospital Logo" >
+          <h1>City Hospital</h1>
+        </div>
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="register.html">Register</a>
+          <a href="login.html">Login</a>
+          <a href="about.html">About Us</a>
+        </nav>
+      </div>
     </header>
   
     <!-- Main Content -->
     <main>
-      <!-- Welcome Message with Inline Styling (to meet the CSS requirement) -->
-      <h1 id="welcome-message" style="opacity: 0;">Welcome to City Hospital</h1>
-      <p>Your health is our priority.</p>
-      <img src="images/hospital.jpg" alt="Hospital Building">
+      <div class="container">
+        <!-- Welcome Message with Inline CSS (Requirement) -->
+        <h2 id="welcome-message" style="opacity: 0;">Welcome to City Hospital</h2>
+        <p>Your health is our priority.</p>
+        <img src="images/hospital.jpg" alt="Hospital Building">
   
-      <!-- Departments Section with JavaScript Loop -->
-      <section>
-        <h2>Our Departments</h2>
-        <ul id="dept-list"></ul> <!-- This list will be populated by JavaScript -->
-      </section>
+        <!-- Departments Section -->
+        <section class="departments">
+          <h2>Our Departments</h2>
+          <ul id="dept-list"></ul> <!-- Populated by JavaScript -->
+        </section>
   
-      <!-- Visiting Hours Table (HTML Table Requirement) -->
-      <section>
-        <h2>Visiting Hours</h2>
-        <table>
-          <tr>
-            <th>Department</th>
-            <th>Visiting Hours</th>
-          </tr>
-          <tr>
-            <td>General Medicine</td>
-            <td>10 AM - 8 PM</td>
-          </tr>
-          <tr>
-            <td>Pediatrics</td>
-            <td>11 AM - 7 PM</td>
-          </tr>
-          <!-- Add more rows as needed -->
-        </table>
-      </section>
+        <!-- Visiting Hours Table (HTML Tables Requirement) -->
+        <section class="visiting-hours">
+          <h2>Visiting Hours</h2>
+          <table>
+            <tr>
+              <th>Department</th>
+              <th>Visiting Hours</th>
+            </tr>
+            <tr>
+              <td>General Medicine</td>
+              <td>10 AM - 8 PM</td>
+            </tr>
+            <tr>
+              <td>Pediatrics</td>
+              <td>11 AM - 7 PM</td>
+            </tr>
+            <tr>
+              <td>Cardiology</td>
+              <td>9 AM - 5 PM</td>
+            </tr>
+            <tr>
+              <td>Orthopedics</td>
+              <td>8 AM - 6 PM</td>
+            </tr>
+          </table>
+        </section>
+      </div>
     </main>
   
     <!-- Footer -->
     <footer>
-      <p>&copy; 2024 City Hospital. All rights reserved.</p>
+      <div class="container">
+        <p>&copy; 2024 City Hospital. All rights reserved.</p>
+      </div>
     </footer>
   
-    <!-- Link to your JavaScript file -->
+    <!-- External JavaScript -->
     <script src="script.js"></script>
   </body>
-  </html>
-  
+</html>

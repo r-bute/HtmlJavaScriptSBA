@@ -2,42 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login - Hospital Management System</title>
+  <title>City Hospital - Login</title>
+  <!-- Web Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+  <!-- External CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="register.html">Register</a>
-      <a href="login.html">Login</a>
-    </nav>
+  <!-- Header and Navigation -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.png" alt="City Hospital Logo">
+        <h1>City Hospital</h1>
+      </div>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </div>
   </header>
 
   <!-- Login Form -->
   <main>
-    <div>
-        <h2>Login</h2>
-        <form id="login-form">
-        <label for="username">Email:</label>
-        <input type="email" id="username" name="username" required>
+    <div class="container">
+      <h2>Login</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="username">Email:</label>
+          <input type="email" id="username" name="username" required>
+        </div>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
 
         <button type="submit">Login</button>
-        </form>
+      </form>
     </div>
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 City Hospital. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2024 City Hospital. All rights reserved.</p>
+    </div>
   </footer>
 
-  <!-- JavaScript -->
+  <!-- External JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>

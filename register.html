@@ -2,53 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Register - Hospital Management System</title>
+  <title>City Hospital - Register</title>
+  <!-- Web Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+  <!-- External CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="register.html">Register</a>
-      <a href="login.html">Login</a>
-    </nav>
+  <!-- Header and Navigation -->
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.png" alt="City Hospital Logo">
+        <h1>City Hospital</h1>
+      </div>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </div>
   </header>
 
   <!-- Registration Form -->
   <main>
-    <h2>Register</h2>
-    <form id="registration-form">
-      <label for="full-name">Full Name:</label>
-      <input type="text" id="full-name" name="fullName" required>
+    <div class="container">
+      <h2>Register</h2>
+      <form id="registration-form">
+        <div class="form-group">
+          <label for="full-name">Full Name:</label>
+          <input type="text" id="full-name" name="fullName" required>
+        </div>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required
-             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required
+                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </div>
 
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" name="phone" required
-             pattern="\d{3}-\d{3}-\d{4}" placeholder="123-456-7890">
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required
+                 pattern="\d{3}-\d{3}-\d{4}" placeholder="123-456-7890">
+        </div>
 
-      <label for="department">Department:</label>
-      <select id="department" name="department">
-        <option value="cardiology">Cardiology</option>
-        <option value="neurology">Neurology</option>
-        <option value="pediatrics">Pediatrics</option>
-        <option value="orthopedics">Orthopedics</option>
-      </select>
+        <div class="form-group">
+          <label for="department">Department:</label>
+          <!-- Dropdown Menu (Requirement) -->
+          <select id="department" name="department">
+            <option value="cardiology">Cardiology</option>
+            <option value="neurology">Neurology</option>
+            <option value="pediatrics">Pediatrics</option>
+            <option value="orthopedics">Orthopedics</option>
+          </select>
+        </div>
 
-      <button type="submit">Register</button>
-    </form>
+        <button type="submit">Register</button>
+      </form>
+    </div>
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 City Hospital. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2024 City Hospital. All rights reserved.</p>
+    </div>
   </footer>
 
-  <!-- JavaScript -->
+  <!-- External JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,76 +1,161 @@
-/* Import Google Font */
+/* External CSS */
+
+/* Import Google Font (Requirement) */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-
+/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  h1, h2 {
-    color: #005f69;
-  }
-  
-  /* Navigation Menu Styles */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+  background-color: #005f69;
+  color: white;
+  padding: 10px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 15px;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+/* Navigation Menu (Flexbox Requirement) */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #005f69;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+}
+
+.navbar a:hover {
+  background-color: #007a85;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #005f69;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Departments and Visiting Hours Sections */
+.departments, .visiting-hours {
+  margin-top: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #005f69;
+  color: white;
+}
+
+/* Form Styles */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block; /* CSS Selector: Element Selector */
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+  width: 100%; /* CSS Selector: Attribute Selector */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #005f69;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007a85; /* CSS Selector: Pseudo-class Selector */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #005f69;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .navbar {
-    display: flex; /* Flexbox usage */
-    justify-content: space-around;
-    background-color: #005f69;
-    padding: 10px;
-  }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-  }
-  
-  .navbar a:hover {
-    background-color: #007a85;
-  }
-  
-  /* Table Styles */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  th, td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #005f69;
-    color: white;
-  }
-  
-  /* Form Styles */
-  form {
-    display: flex;
     flex-direction: column;
   }
-  
-  label, input, select, button {
-    margin-bottom: 10px;
-  }
-  
-  /* Footer Styles */
-  footer {
-    background-color: #005f69;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto; /* Centers the container horizontally */
-    padding: 20px;
+  .logo {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+}
+
+/* CSS Selectors Used:
+   - Element Selector: label
+   - Class Selector: .navbar
+   - ID Selector: #header
+   - Attribute Selector: input[type="text"]
+   - Pseudo-class Selector: button:hover
+*/
+
+/* Limiting the Number of Fonts and Using Complementary Colors (Requirements) */

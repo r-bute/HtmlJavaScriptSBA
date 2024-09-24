@@ -96,3 +96,12 @@ function validateRegistrationForm(event) {
     loginForm.addEventListener("submit", validateLoginForm);
   }
   
+  window.onload = function() {
+    if (document.getElementById("dept-list")) {
+      displayDepartments();
+    }
+    if (document.getElementById("welcome-message")) {
+      fadeInEffect();
+    }
+  };
+  
